@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBD0"
+    android:id="@+id/parent_constraint"
+    tools:context=".ExtendableFab.TextNoteActivity">
+  <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appBarLayout"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/handwritingtoolbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#FFFFFF"
+          android:minHeight="?attr/actionBarSize"
+          android:theme="?attr/actionBarTheme"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          />
+      <ImageView
+          android:id="@+id/textView2"
+          android:layout_width="60dp"
+          android:layout_height="30dp"
+          android:layout_marginEnd="10dp"
+          app:srcCompat="@drawable/ic_redo_black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="@+id/handwritingtoolbar"
+          app:layout_constraintTop_toTopOf="parent" />
+      <ImageView
+          android:id="@+id/textView3"
+          android:layout_width="60dp"
+          android:layout_height="30dp"
+          android:layout_marginEnd="10dp"
+          app:srcCompat="@drawable/ic_undo_black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/textView2"
+          app:layout_constraintTop_toTopOf="parent" />
+      <ImageView
+          android:id="@+id/textView4"
+          android:layout_width="60dp"
+          android:layout_height="30dp"
+          android:layout_marginEnd="10dp"
+          app:srcCompat="@drawable/ic_photo_size_select_small_black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/textView3"
+          app:layout_constraintTop_toTopOf="parent" />
+      <ImageView
+          android:id="@+id/textView5"
+          android:layout_width="60dp"
+          android:layout_height="30dp"
+          android:layout_marginEnd="1dp"
+          app:srcCompat="@drawable/eraser_icon_black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/textView4"
+          app:layout_constraintTop_toTopOf="parent" />
+      <ImageView
+          android:id="@+id/textView6"
+          android:layout_width="50dp"
+          android:layout_height="30dp"
+          android:layout_marginEnd="1dp"
+          android:layout_marginStart="2dp"
+          app:srcCompat="@drawable/ic_draw_black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/textView5"
+          app:layout_constraintTop_toTopOf="parent" />
+      <ImageView
+          android:id="@+id/backArrow_sign_save"
+          android:layout_width="70dp"
+          android:layout_height="35dp"
+          app:srcCompat="@drawable/ic_arrow_back_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintStart_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.appbar.AppBarLayout>
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <com.kyanogen.signatureview.SignatureView
+        xmlns:sign="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/signature_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        sign:penSize="5dp"
+        sign:backgroundColor="#ffffff"
+        sign:penColor="#000000"
+        sign:enableSignature="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_margin="30dp"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Clear"
+        android:textColor="@android:color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_signature"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+       android:layout_marginTop="30dp"/>
+  </LinearLayout>
+  ___________________
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_anchorGravity="top"
+      android:layout_marginTop="30dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/up_hand_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:src="@drawable/ic_keyboard_arrow_up_green"
+        app:fabSize="mini"
+        app:layout_anchorGravity="top"
+        android:visibility="invisible"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      app:layout_anchorGravity="bottom"
+      app:layout_constraintBottom_toBottomOf="@id/parent_constraint"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@id/parent_constraint">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bottom_hand_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:src="@drawable/ic_add_green"
+        app:fabSize="mini"
+        app:layout_anchorGravity="bottom"
+        android:layout_marginBottom="30dp"/>
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

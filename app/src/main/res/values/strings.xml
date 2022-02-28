@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Evernote</string>
+    <string name="add">Add</string>
+    <string name="reset">Reset</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <color name="underLine">#FF018786</color>
+
+    <string name="writeNote">Start writing or choose a</string>
+    <string name="title_activity_note">Note</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="menu_selectNotes">Select notes</string>
+    <string name="menu_AddtoHome">Add to home screen</string>
+    <string name="menu_SortBy">Sort by</string>
+    <string name="menu_Viewoptions">View options</string>
+    <string name="menu_sync">Sync</string>
+    //navigation drawer in left
+    <string name="menu_allNotes">All Notes</string>
+    <string name="menu_noteBooks">Notebooks</string>
+    <string name="menu_sharedWithMe">Shared With Me</string>
+    <string name="menu_collectPhotos">Collect Photos</string>
+    <string name="menu_workChat">Work Chat</string>
+    <string name="menu_trash">Trash</string>
+    <string name="menu_darkTheme">Dark Theme</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_setting_option_menu">SettingActivityOptionMenu</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="option_menu">Explore the levels of Evernote</string>
+
+
+</resources>

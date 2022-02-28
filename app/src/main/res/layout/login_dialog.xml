@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:id="@+id/dialogreminderBtn"
+            android:text="Reminder"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/dialogImageReminder"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/camera"/>
+    </LinearLayout> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right">
+    <Button
+        android:id="@+id/dialogAudioBtn"
+        android:text="Audio"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/dialogImageaudio"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/notebook_icon"/></LinearLayout> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right">
+    <Button
+        android:id="@+id/dialogattachmentBtn"
+        android:text="Attachment"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/dialogImagettachment"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/notebook_icon"/></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:id="@+id/dialoghandwritingBtn"
+            android:text="Handwriting"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/dialogImageHandwriting"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/camera"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:id="@+id/dialogcameraBtn"
+            android:text="Camera"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/dialogImageCamera"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/camera"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:id="@+id/dialogTextNoteBtn"
+            android:text="Text Note"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/dialogImageTextNote"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/camera"/>
+    </LinearLayout>
+</LinearLayout>
+

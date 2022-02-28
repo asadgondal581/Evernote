@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title=" "
+        android:id="@+id/action_selectPayment"
+        android:orderInCategory="100"
+        android:icon="@drawable/messenger_icon"
+        app:showAsAction="always"
+        android:top="100dp"
+        android:bottom="100dp"
+        android:right="100dp"
+        android:left="100dp"
+        />
+    <item
+        android:title=" "
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_selectNotes"
+        android:orderInCategory="100"
+        android:title="@string/menu_selectNotes"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_AddtoHomeSccreen"
+        android:orderInCategory="100"
+        android:title="@string/menu_AddtoHome"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_SortBy"
+        android:orderInCategory="100"
+        android:title="@string/menu_SortBy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Viewoptions"
+        android:orderInCategory="100"
+        android:title="@string/menu_Viewoptions"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Sync"
+        android:orderInCategory="100"
+        android:title="@string/menu_sync"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+</menu>

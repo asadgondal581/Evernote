@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ShowIn="navigation_view">
+    <item
+        android:id="@+id/nav_allNotes"
+        android:icon="@drawable/notebook_icon"
+        android:title="All Notes"
+        />
+    <item
+        android:id="@+id/nav_noteBooks"
+        android:icon="@drawable/notebook_icon"
+        android:title="Notebooks"
+        />
+    <item
+        android:id="@+id/nav_sharedWithMe"
+        android:icon="@drawable/notebook_icon"
+        android:title="Shared with Me"
+        />
+    <item
+        android:id="@+id/nav_collectPhotos"
+        android:icon="@drawable/notebook_icon"
+        android:title="Collect Photos"
+        />
+    <item
+        android:id="@+id/nav_workChat"
+        android:icon="@drawable/notebook_icon"
+        android:title="Work Chat"
+        />
+    <item
+        android:id="@+id/nav_trash"
+        android:icon="@drawable/notebook_icon"
+        android:title="Trash"
+        />
+    <item
+        android:id="@+id/nav_darkTheme"
+        android:icon="@drawable/notebook_icon"
+        android:title="Dark Theme"
+        />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/notebook_icon"
+        android:title="Settings"
+        />
+    <item
+        android:id="@+id/nav_exploreEvernote"
+        android:icon="@drawable/notebook_icon"
+        android:title="Explore Evernote"
+        />
+</menu>

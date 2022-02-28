@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.evernote" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Evernote" >
+        <activity
+            android:name=".ExtendableFab.HandWritingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RightNav.SettingActivityOptionMenu"
+            android:exported="false"
+            android:label="@string/title_activity_setting_option_menu"
+            android:theme="@style/Theme.Evernote.NoActionBar" />
+        <activity
+            android:name=".SettingOptionMenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_setting_option_menu"
+            android:theme="@style/Theme.Evernote.NoActionBar" />
+        <activity
+            android:name=".RightNav.SelectNote"
+            android:exported="false" />
+        <activity
+            android:name=".ExtendableFab.Note"
+            android:exported="false"
+            android:label="@string/title_activity_note"
+            android:theme="@style/Theme.Evernote.NoActionBar" />
+        <activity
+            android:name=".NavDrawer.ExploreEvernote"
+            android:exported="false" />
+        <activity
+            android:name=".RightNav.Setting"
+            android:exported="false" />
+        <activity
+            android:name=".NavDrawer.Trash"
+            android:exported="false" />
+        <activity
+            android:name=".NavDrawer.WorkChat"
+            android:exported="false" />
+        <activity
+            android:name=".NavDrawer.CollectPhotos"
+            android:exported="false" />
+        <activity
+            android:name=".NavDrawer.SharedWithMe"
+            android:exported="false" />
+        <activity
+            android:name=".NavDrawer.Notebooks"
+            android:exported="false" />
+        <activity
+            android:name=".ExtendableFab.TextNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FreeTrial"
+            android:exported="false" />
+        <activity
+            android:name=".Main.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Main.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
