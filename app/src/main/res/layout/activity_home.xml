@@ -51,7 +51,7 @@
         android:id="@+id/email_edt_text"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="159dp"
         android:text="Email"
         android:textColor="#D6D5CB"
         app:layout_constraintEnd_toEndOf="parent"
